@@ -1,0 +1,31 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>Cryptoquip Maker</title>
+		<style>
+			
+		</style>
+
+	</head>
+	<body bgcolor="#FFCCFF" style="font-family:georgia;font-size:20px">
+		<script>
+			a_f = ['0','1','2','3','4','5','6','7',
+				   '8','9','a','b','c','d','e','f'];
+			h = 600 / 16;
+			document.write("<table cellspacing=1>");
+			for (i = 0; i < 16; i++) {
+				document.write("<tr>");
+				for (j = 0; j < 16; j++) {
+					color = "d8" + a_f[i] + "8" + a_f[i] + "8";
+					document.write("<td width='150pt' height='"+h+"pt' bgcolor='#"+color+"'></td>");
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+			
+		<noscript>
+			<h2> This page requires Javascript.</h2>
+		</noscript>
+	</body>
+</html>

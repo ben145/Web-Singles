@@ -1,0 +1,47 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>Top-Left Bottom-Right RED Gradient</title>
+		<style>
+			
+		</style>
+
+	</head>
+	<body bgcolor="#FFCCFF">
+		<script>
+			a_f = ['0','1','2','3','4','5','6','7',
+				   '8','9','a','b','c','d','e','f'];
+			ht = Math.floor(600 / 16);
+			r1 = 'f'
+			r2 = 'f'
+			g2 = 0
+			b2 = 0
+			document.write("<table cellspacing=1>");
+			for (i = 0; i < 16; i++) {
+				document.write("<tr>");
+				for (j = 0; j < 16; j++) {
+					if (i % 2 == 0) {
+						if (j % 2 == 0)
+							g2, b2 = '0';
+						else
+							g2, b2 = '8'
+					}
+					else {
+						if (j % 2 == 0)
+							g2, b2 = '8';
+						else
+							g2, b2 = '0'
+					}
+					color = r1+r2+ a_f[Math.floor((j+i)/2)] + g2 + a_f[Math.floor((j+i)/2)] + b2;
+					document.write("<td width='150pt' height='"+ht+"pt' bgcolor='#"+color+"'></td>");
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+			
+		<noscript>
+			<h2> This page requires Javascript.</h2>
+		</noscript>
+	</body>
+</html>

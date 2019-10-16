@@ -1,0 +1,36 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>BLUE-GREEN Diagonal Gradient</title>
+		<style>
+			
+		</style>
+
+	</head>
+	<body bgcolor="#FFCCFF">
+		<script>
+			ht = Math.floor(600 / 16);
+			red = 0
+			green = 0
+			blue = 255
+			document.write("<table cellspacing=1>");
+			for (i = 0; i < 16; i++) {
+				document.write("<tr>");
+				for (j = 0; j < 16; j++) {
+					red += 8;
+					green += 8;
+					color = "(" + red + "," + green + "," + blue + ")";
+					document.write("<td width='150pt' height='" + ht + "pt' bgcolor='rgb" + color + "'></td>");
+				}
+				document.write("</tr>");
+				red = i*8;
+				green = i*8
+			}
+			document.write("</table>");
+		</script>
+			
+		<noscript>
+			<h2> This page requires Javascript.</h2>
+		</noscript>
+	</body>
+</html>
